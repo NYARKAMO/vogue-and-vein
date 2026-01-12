@@ -1,0 +1,61 @@
+body {
+  font-family: var(--font-main);
+  color: var(--black);
+  background: var(--white);
+}
+
+/* Layout */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+/* Buttons */
+.btn {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--black);
+  color: var(--white);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--black);
+}
+
+/* Cards */
+.card {
+  border: 1px solid #ddd;
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-lg);
+  background: var(--light-gray);
+  text-align: center;
+  margin-top: var(--space-xl);
+}

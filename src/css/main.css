@@ -1,0 +1,18 @@
+h1 {
+  font-size: 36px;
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: var(--space-md);
+}
+
+p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: var(--space-xl);
+}
