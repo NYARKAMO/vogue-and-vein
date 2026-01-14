@@ -5,10 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeBtn = document.getElementById('close-btn');
 
   hamburger.addEventListener('click', function() {
+    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !isExpanded);
+    nav.setAttribute('aria-hidden', isExpanded);
     nav.classList.toggle('active');
   });
 
   closeBtn.addEventListener('click', function() {
+    hamburger.setAttribute('aria-expanded', 'false');
+    nav.setAttribute('aria-hidden', 'true');
     nav.classList.remove('active');
   });
 

@@ -32,6 +32,21 @@ body {
   font-weight: 500;
 }
 
+.nav-links .social-icons {
+  display: flex;
+  gap: var(--space-md);
+  margin-left: auto;
+}
+
+.nav-links .social-icons a {
+  color: var(--gray);
+  transition: color 0.3s;
+}
+
+.nav-links .social-icons a:hover {
+  color: var(--gold);
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
@@ -87,6 +102,13 @@ body {
     flex-direction: column;
     gap: var(--space-md);
     padding: 0 var(--space-lg);
+  }
+
+  .nav-links .social-icons {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: var(--space-md);
+    margin-left: 0;
   }
 
   .close-btn {
