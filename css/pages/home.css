@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-  background: url('../../assets/images/images\ \(1\).jpeg') no-repeat center center/cover;
+  position: relative;
   color: var(--white);
   text-align: center;
   padding: var(--space-xl) var(--space-lg);
@@ -8,6 +8,47 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
 }
 
 .hero h1 {
@@ -18,6 +59,7 @@
 .hero p {
   font-size: 18px;
   margin-bottom: var(--space-lg);
+  color: var(--white);
 }
 
 /* Products Grid */
