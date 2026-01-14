@@ -1,0 +1,66 @@
+/* Hero Section */
+.hero {
+  background: url('../../assets/images/images\ \(8\).jpeg') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: var(--space-md);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: var(--space-lg);
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.product-card h3 {
+  margin-top: var(--space-md);
+  font-size: 20px;
+}
+
+.product-card p {
+  color: var(--gold);
+  font-weight: bold;
+}
+
+/* Sustainability Section */
+.sustainability {
+  background: var(--light-gray);
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.sustainability h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.sustainability p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+}
